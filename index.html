@@ -26,7 +26,7 @@ http://www.templatemo.com/tm-501-neaty
           <![endif]-->
 </head>
     <body>        
-            <!-- JS Comentários do face -->
+            <!-- Botão curtir FACEBOOK -->
             <script>
                     window.fbAsyncInit = function() {
                       FB.init({
@@ -45,7 +45,17 @@ http://www.templatemo.com/tm-501-neaty
                        fjs.parentNode.insertBefore(js, fjs);
                      }(document, 'script', 'facebook-jssdk'));
             </script>
-            <!-- fim JS comentários do face -->
+
+            <!-- JS comentários FACEBOOK -->
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.1&appId=299393800649094&autoLogAppEvents=1';
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+            <!-- fim scripts facebook -->
 
         <div class="container">
             <div class="row">
@@ -388,18 +398,20 @@ http://www.templatemo.com/tm-501-neaty
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7549.611487786016!2d-48.2552801307391!3d-18.8956970794927!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2f853ae2d0e213db!2sTeatro+Municipal!5e0!3m2!1spt-BR!2sbr!4v1536361350583" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </section>
     
-                                <!-- ACRESCENTADO Comentários do face -->
-                            <section id="comments">
+                                <!-- ACRESCENTADO Botão curtir e comentários FACEBOOK -->
+                            <section id="comments">         <!-- ACRESCENTADO botão curtir facebook -->
                                 <p></p>
-                                <p><b>Deixe seu comentário</b></p>
-                                <div
-                                    class="fb-like"
-                                    data-share="true"
-                                    data-width="450"
-                                    data-show-faces="true">
-                                </div>
+                                <div                    
+                                class="fb-like"
+                                data-share="true"
+                                data-width="450"
+                                data-show-faces="true">
+                            </div>
+                                <p><b>Deixe seu comentário</b></p>      <!-- ACRESCENTADO comentários facebook -->
+                                <div class="fb-comments" data-href="https://saraucultural.github.io/teste/" data-width="550" data-numposts="10"></div>
                             </section>
-
+                            <!-- fim seção curtir e comentários -->
+                            
                             <footer>
                                 <p></p> <!-- ACRESCENTADO -->
                                 <p class="tm-copyright-p">Copyright &copy; <span class="tm-current-year">2017</span> Your Company 
