@@ -26,6 +26,17 @@ http://www.templatemo.com/tm-501-neaty
           <![endif]-->
 </head>
     <body>        
+            <!-- JS Comentários do face -->
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.1';
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+            <!-- fim JS comentários do face -->
+
         <div class="container">
             <div class="row">
                 <div class="tm-left-right-container">
@@ -157,7 +168,7 @@ http://www.templatemo.com/tm-501-neaty
                                 
                                 <div class="row"> <!-- ACRESCENTADO - para dar espaço para próxima seção-->
                                     <div class="col-md-12 tm-bg-accent tm-gallery-pad tm-gallery-container-1">
-                                        <div class="grid text-xs-center tm-gallery-container tm-gallery tm-gallery-1"> <!-- Acrescentado col-md-12, grid, tex-xs-center e tm-gallery -->
+                                        <div class="grid text-xs-center tm-gallery-container tm-gallery-1"> <!-- Acrescentado col-md-12, grid, tex-xs-center -->
                                             <!-- MODELO deste template
                                             <div class="tm-img-container tm-img-container-1"> 
                                                 <a href="neaty-01.jpg"><img src="img/neaty-01.jpg" alt="Image" class="img-fluid tm-img-tn"></a>    
@@ -205,7 +216,7 @@ http://www.templatemo.com/tm-501-neaty
                                 <!-- ACRESCENTADO sem a coluna não aparece as setas para os lados -->
                                 <div class="row">
                                     <div class="col-md-12 tm-bg-accent tm-gallery-pad tm-gallery-container-2">
-                                        <div class="grid text-xs-center tm-gallery-container tm-gallery tm-gallery-1"> <!-- Acrescentado col-md-12, grid, tex-xs-center e tm-gallery-->
+                                        <div class="grid text-xs-center tm-gallery-container tm-gallery-2"> <!-- Acrescentado col-md-12, grid, tex-xs-center -->
                                             
                                             <figure class="tm-img-container tm-img-container-2">
                                                 <a href="img/galeria2/8A e 8B.JPG"><img src="img/galeria2/8A e 8B.JPG" alt title="Alunos 8º ano Turmas A e B da Escola Estadual Frei Egídio Parisi" class="img-fluid tm-img-tn"/><figcaption>Alunos 8ºA e 8ºB</figcaption></a>    
@@ -254,7 +265,7 @@ http://www.templatemo.com/tm-501-neaty
                                 
                                 <div class="row"> <!-- ACRESCENTADO - para dar espaço para próxima seção-->
                                     <div class="col-md-12 tm-bg-accent tm-gallery-pad tm-gallery-container-3">
-                                        <div class="grid text-xs-center tm-gallery-container tm-gallery tm-gallery-3"> <!-- Acrescentado col-md-12, grid, tex-xs-center e tm-gallery -->
+                                        <div class="grid text-xs-center tm-gallery-container tm-gallery-3"> <!-- Acrescentado col-md-12, grid, tex-xs-center -->
 
                                             <figure class="tm-img-container tm-img-container-3">
                                                 <a href="img/galeria3/livro1.png"><img src="img/galeria3/livro1.png" alt title="LIvro Nossa Escola em Versos I, 2013" max-height="110px" class="img-fluid tm-img-tn">
@@ -367,6 +378,10 @@ http://www.templatemo.com/tm-501-neaty
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7549.611487786016!2d-48.2552801307391!3d-18.8956970794927!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2f853ae2d0e213db!2sTeatro+Municipal!5e0!3m2!1spt-BR!2sbr!4v1536361350583" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </section>
     
+                            <section>
+                                <div class="fb-comments" data-href="https://saraucultural.github.io/teste/" data-width="500" data-numposts="5"></div>
+                            </section>
+                            
                             <footer>
                                 <p></p> <!-- ACRESCENTADO -->
                                 <p class="tm-copyright-p">Copyright &copy; <span class="tm-current-year">2017</span> Your Company 
@@ -446,7 +461,7 @@ http://www.templatemo.com/tm-501-neaty
 
             // ACRESCENTADO -  faz as fotos ficarem todas ao lado umas das outras
             $(function() {
-                    $('.tm-gallery').slick({
+                    $('.tm-gallery-1').slick({
                         dots: true,
                         infinite: true,
                         slidesToShow: 4,
@@ -480,6 +495,75 @@ http://www.templatemo.com/tm-501-neaty
                     }); //slick
                 }); //função
 
+            $(function() {
+                    $('.tm-gallery-2').slick({
+                        dots: true,
+                        infinite: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 2,
+                        responsive: [
+                        {
+                            breakpoint: 991,
+                            settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 2
+                            }
+                        },
+                        {
+                            breakpoint: 767,
+                            settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                            }
+                        }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                    ]
+                    }); //slick
+                }); //função
+
+            $(function() {
+                    $('.tm-gallery-3').slick({
+                        dots: true,
+                        infinite: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 2,
+                        responsive: [
+                        {
+                            breakpoint: 991,
+                            settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 2
+                            }
+                        },
+                        {
+                            breakpoint: 767,
+                            settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                            }
+                        }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                    ]
+                    }); //slick
+                }); //função
 
         </script>             
 </body>
